@@ -1,15 +1,15 @@
 const Features = () => {
   return (
     <div className="relative h-full">
-      <div className="h-[326px] w-full overflow-hidden bg-[#D9E0EC33]">
+      <div className="h-[500px] w-full overflow-hidden bg-[#D9E0EC33] lg:h-[326px]">
         <div className="mx-auto h-full max-w-[1440px]">
-          <div className="flex h-full items-center gap-20">
-            <div className="max-w-[400px]">
+          <div className="flex h-full flex-col items-center justify-between gap-20 px-2 xl:flex-row">
+            <div className="max-w-[400px] pt-5 lg:pt-0">
               <h1 className="font-serif text-3xl font-bold">
                 The amazing NFT art of the world here
               </h1>
             </div>
-            <div className="flex flex-1 items-center justify-center gap-14">
+            <div className="flex flex-1 flex-col items-center justify-start  gap-14 lg:flex-row  lg:justify-end">
               <div className="h-[80px] max-w-[280px]">
                 <h1 className="py-2 text-xl font-bold">
                   <span>
@@ -42,7 +42,7 @@ const Features = () => {
                   Aliquam etiam viverra tellus imperdiet.
                 </p>
               </div>
-              <div className="h-[80px] max-w-[280px]">
+              <div className="h-[80px] max-w-[300px]">
                 <h1 className="py-2 text-xl font-bold">
                   <span>
                     <svg

@@ -126,7 +126,7 @@ const NavMenu = () => {
       <div
         className={
           open
-            ? 'absolute inset-x-0 top-0 origin-top-right scale-100 transform p-2 opacity-100 transition transition duration-200 ease-out lg:hidden'
+            ? 'absolute inset-x-0 top-0 z-50 origin-top-right scale-100 transform p-2 opacity-100 transition transition duration-200 ease-out lg:hidden'
             : 'absolute inset-x-0 top-0 origin-top-right scale-95 transform p-2 opacity-0 transition lg:hidden'
         }
       >
