@@ -51,7 +51,7 @@ const NavMenu = () => {
               <button
                 type="button"
                 className="
-                   pb-8' group inline-flex items-center rounded-md bg-white text-base font-medium text-black hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+                   pb-8' group inline-flex items-center rounded-md bg-white text-base font-medium text-black transition-all duration-500 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
                   "
               >
                 <span>Marketplace</span>
@@ -60,13 +60,13 @@ const NavMenu = () => {
 
             <a
               href="#"
-              className="text-blackhover:text-gray-900 text-base font-medium"
+              className="text-base font-medium text-black transition-all duration-500 hover:text-gray-500"
             >
               Resource
             </a>
             <a
               href="#"
-              className="text-base font-medium text-black hover:text-gray-900"
+              className="text-base font-medium text-black transition-all duration-500 hover:text-gray-500"
             >
               About
             </a>
@@ -109,7 +109,7 @@ const NavMenu = () => {
             </form>
             <a
               href="#"
-              className="whitespace-nowrap rounded-full border-2 border-primary  bg-primary px-10 py-3 text-sm font-bold text-white hover:text-gray-900"
+              className="whitespace-nowrap rounded-full border-2 border-primary  bg-primary px-10 py-3 text-sm font-bold text-white hover:bg-indigo-100 hover:text-indigo-900"
             >
               Upload{' '}
             </a>
@@ -126,7 +126,7 @@ const NavMenu = () => {
       <div
         className={
           open
-            ? 'absolute inset-x-0 top-0 z-50 origin-top-right scale-100 transform p-2 opacity-100 transition transition duration-200 ease-out lg:hidden'
+            ? 'absolute inset-x-0 top-0 z-50 origin-top-right scale-100 transform p-2 opacity-100  transition duration-200 ease-out lg:hidden'
             : 'absolute inset-x-0 top-0 origin-top-right scale-95 transform p-2 opacity-0 transition lg:hidden'
         }
       >
