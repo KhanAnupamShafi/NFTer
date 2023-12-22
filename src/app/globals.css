@@ -1,27 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: 'DM Sans', system-ui, sans-serif;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+:root {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-primary: #3d00b7;
+  --color-secondary: #2ecc71;
+  --color-background: #ecf0f1;
+  --color-dim: #696969;
+}
+.rounded-text {
+  width: 5.625rem;
+  height: 5.625rem;
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: #000;
+  font-weight: bold;
+  z-index: -1;
+  font-family: Raleway;
+  padding: 10px;
+}
+.white {
+  fill: #000;
+}
+.yellow {
+  fill: #ffda2a;
+}
+.green {
+  fill: #00d3b9;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+@keyframes coloring {
+  0% {
+    fill: #000;
+  }
+  35% {
+    fill: #020202;
+  }
+  75% {
+    fill: #0e0e0e;
+  }
+  100% {
+    fill: #000;
+  }
+}
+.coloring {
+  animation: coloring 12s linear infinite;
 }
